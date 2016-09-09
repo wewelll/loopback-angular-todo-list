@@ -7,7 +7,7 @@
     "start": "node .",
     "posttest": "npm run lint && nsp check",
     "compile": "jade --out client/www client/src/index.jade && coffee --compile --output client/www client/src/app.coffee ",
-    "test": "./client/node_modules/.bin/karma start",
+    "test": "./node_modules/.bin/karma start",
     "server:start": "node .",
     "client:build": "gulp"
   },
