@@ -1,0 +1,56 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check",
+    "compile": "jade --out client/www client/src/index.jade && coffee --compile --output client/www client/src/app.coffee ",
+    "test": "./client/node_modules/.bin/karma start",
+    "server:start": "node .",
+    "client:build": "gulp"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.5.8",
+    "coffee-script": "1.10.0",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "gulp-rename": "^1.2.2",
+    "helmet": "^1.3.0",
+    "jade": "1.11.0",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.4.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-loopback": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-loopback-sdk-angular": "^0.1.4",
+    "karma": "0.13.22",
+    "karma-coffee-preprocessor": "0.3.0",
+    "karma-mocha": "0.2.2",
+    "karma-mocha-reporter": "1.2.0",
+    "karma-phantomjs-launcher": "1.0.0",
+    "karma-sinon-chai": "1.2.0",
+    "nsp": "^2.1.0",
+    "supertest": "^2.0.0",
+    "tape": "^4.6.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "todo-list"
+}
