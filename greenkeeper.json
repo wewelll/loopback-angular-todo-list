@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "client/package.json",
+        "client/vendors/angular-mocks/package.json",
+        "client/vendors/angular/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
